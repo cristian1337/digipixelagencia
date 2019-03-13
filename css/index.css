@@ -177,6 +177,10 @@ a:hover{
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.705);
 }
+#overlay3 h5 {
+    text-align: justify;
+    color: rgb(27, 29, 44) !important;
+}
 .parallax{
     background-image: url(../imagenes/header.jpg);
     min-height: 500px;
@@ -279,6 +283,9 @@ section#contacto{
     }
     .digi{
         display: flex;
+    }
+    .parallax2 h6 {
+        text-align: center;
     }
 }
 

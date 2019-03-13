@@ -1,5 +1,5 @@
 var contacto = document.getElementById('contactoForm');
-contactoForm.setAttribute('action','https://formspree.io/'+'crispisjam'+'@'+'gmail'+'.'+'com');
+contactoForm.setAttribute('action','https://formspree.io/'+'digipixelagencia'+'@'+'gmail'+'.'+'com');
 
 $(document).ready(function(){
     var controller = new ScrollMagic.Controller();
