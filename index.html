@@ -9,48 +9,50 @@
   </head>
   <body>
     <div class="parallax">
-      <!--navegacion-->
-      <div class="navegacion container-fluid" id="overlay3">
-        <div class="container">
-          <div id="trigger" class="row navegacion">
-            <div class="col-sm-12">
-              <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#"><img src="imagenes/logo_digi-pixel.png" alt="" width="120px"></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i><img class="menu" src="imagenes/menu.png" alt=""></i>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                  <ul class="navbar-nav font-weight-bold">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">SERVICIOS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">NOSOTROS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">PROYECTOS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">EQUIPO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">CONTACTO</a>
-                    </li>
-                  </ul>
+      <div class="fixed-top pb-3">
+        <!--navegacion-->
+        <div class="navegacion container-fluid" id="overlay3">
+            <div class="container">
+              <div id="trigger" class="row">
+                <div class="col-sm-12">
+                  <nav class="navbar navbar-expand-lg" id="navegacion">
+                    <a class="navbar-brand" href="#"><img src="imagenes/logo_digi-pixel.png" alt="" width="90px"></a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i><img class="menu" src="imagenes/menu.png" alt=""></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                      <ul class="navbar-nav font-weight-bold">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#inicio">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#servicios">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#proyectos">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#equipo">EQUIPO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#contacto">CONTACTO</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
                 </div>
-              </nav>
+              </div>
             </div>
           </div>
-        </div>
+          <!--/navegacion-->
       </div>
-      <!--/navegacion-->
       <!--header-->
-      <div class="container-fluid digipixel" id="overlay2">
-        <div class="row header align-items-center">
-          <div id="trigger2" class="col-sm-12 col-md-6 offset-md-3  d-flex flex-column">
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="container-fluid digipixel" id="overlay2">
+        <div class="row header align-items-center" id="inicio">
+          <div id="trigger2" class="col-sm-12 col-md-6 offset-md-3  d-flex flex-column" style="margin-top:100px">
             <div id="header-fade1" class="fade1">
               <h1 class="font-weight-bold" style="margin-bottom:0">TRANSFORMACION</h1>
               <h1 class="font-weight-bold" style="margin-bottom:0">DIGITAL</h1>
@@ -70,7 +72,7 @@
     </div>
     <div class="parallax2">
       <!--Nuestros Servicios-->
-      <div class="container-fluid" style="background-color: #42484D">
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="container-fluid" style="background-color: #42484D" id="servicios">
         <div id="trigger4" class="container">
           <div class="row">
             <div class="col-sm-12 d-flex flex-column align-content-center align-items-center digipixel">
@@ -127,9 +129,9 @@
         </div>
       </div>
       <!--Quienes Somos-->
-      <div class="container-fluid" id="overlay3">
+      <div  class="container-fluid" id="overlay3">
         <div id="trigger6" class="container">
-          <div class="row">
+          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="nosotros" class="row">
             <div class="col-sm-12 col-md-6 offset-md-3 d-flex flex-column align-content-center align-items-center">
               <div id="somos-fade1" class="fade1">
                 <h2 class="font-weight-bold digipixel" style="color:black; margin-top: 70px; margin-bottom: 0px">QUIÉNES</h2>
@@ -142,7 +144,7 @@
       </div>
     </div>
     <!--Proyectos-->
-    <div class="container-fluid" style="background-color:rgb(240, 240, 240);">
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="container-fluid" style="background-color:rgb(240, 240, 240);" id="proyectos">
       <div id="trigger7" class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6 offset-md-3 d-flex flex-column align-content-center align-items-center">
@@ -178,8 +180,8 @@
             <img src="imagenes/proyectoDiseño2.png" alt="" class="img-fluid">
           </a>
               <div class="portafolio-caption">
-                <h4>Carta Desayunos sorpresa</h4>
-                <p class="text-muted">Diseño grafico</p>
+                <h4>logo digipixel</h4>
+                <p class="text-muted">Diseño Gráfico</p>
               </div>
         </div>
         <div id="proyecto-move" class="col-sm-12 col-md-6 col-lg-4 portafolio-item moveX3">
@@ -210,7 +212,7 @@
       </div>
     </div>
     <!--nuestro equipo-->
-      <div class="container-fluid" style="background-color:rgb(247, 247, 247); padding: 0">
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="container-fluid" id="equipo" style="background-color:rgb(247, 247, 247); padding: 0">
         <div id="trigger8" class="container">
           <div class="row">
             <div class="col-sm-12 col-md-6 offset-md-3 d-flex flex-column align-content-center align-items-center">
@@ -227,16 +229,16 @@
               <p class="text-muted">Desarrollador Web</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.facebook.com/crispis.osoriogomez">
                     <img src="imagenes/002-boton-facebook.png" alt="">
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://twitter.com/Cristia19794264">
                     <img src="imagenes/003-boton-twitter.png" alt="">                  </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/cristian-osorio-gomez-048859166/">
                     <img src="imagenes/001-linkedin.png" alt="">                  </a>
                 </li>
               </ul>
@@ -247,16 +249,16 @@
               <p class="text-muted">Comunity manager</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.facebook.com/jossem0">
                     <img src="imagenes/002-boton-facebook.png" alt="">
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://twitter.com/jossem0">
                     <img src="imagenes/003-boton-twitter.png" alt="">                  </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://instagram.com/jossem0">
                     <img src="imagenes/001-linkedin.png" alt="">                  </a>
                 </li>
               </ul>
@@ -267,16 +269,16 @@
               <p class="text-muted">Marketing Digital</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="">
                     <img src="imagenes/002-boton-facebook.png" alt="">
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="">
                     <img src="imagenes/003-boton-twitter.png" alt="">                  </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="">
                     <img src="imagenes/001-linkedin.png" alt="">                  </a>
                 </li>
               </ul>
@@ -287,16 +289,16 @@
                 <p class="text-muted">Diseñador Grafico</p>
                 <ul class="list-inline social-buttons">
                   <li class="list-inline-item">
-                    <a href="#">
+                    <a href="">
                       <img src="imagenes/002-boton-facebook.png" alt="">
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="#">
+                    <a href="">
                       <img src="imagenes/003-boton-twitter.png" alt="">                  </a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="#">
+                    <a href="">
                       <img src="imagenes/001-linkedin.png" alt="">                  </a>
                   </li>
                 </ul>
@@ -315,14 +317,14 @@
                 <h6 class="card-price text-center">$80.000<span class="period">/pesosCO</span></h6>
                 <hr>
                 <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Diseño de logo original</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Logo compacto</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Diseño de dos publicaciones redes sociales</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Entrega digital</li>
+                  <li ><span class="fa-li"><i class="fas fa-check"></i></span>Diseño de Identidad Corporativa</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Diseño de Folletos</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Diseño de Flyers</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Diseño de Imagen Gráfica para todo tipo de eventos</li>
                 </ul>
                 <a href="https://bit.ly/2Hggz8W" class="btn btn-block text-uppercase"><span style="color: white; font-size: 1.5rem; margin-right: 30px"><i class="fab fa-whatsapp"></i></span>saber más</a>
               </div>
@@ -336,14 +338,14 @@
                 <h6 class="card-price text-center">$450.000<span class="period">/pesosCO</span></h6>
                 <hr>
                 <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Dominio y hosting por un año</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Diseño responsivo para moviles</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>6 Banners y publicaiones para redes sociales</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Formulario de contacto</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Entrega digital de medios</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>plugins y plantilas</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Correos Corporativos</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Galeria de fotos</li>
                 </ul>
                 <a href="https://bit.ly/2Hggz8W" class="btn btn-block btn-primary text-uppercase"><span style="color: white; font-size: 1.5rem; margin-right: 30px"><i class="fab fa-whatsapp"></i></span>saber más</a>
               </div>
@@ -357,14 +359,14 @@
                 <h6 class="card-price text-center">$800.000<span class="period">/pesosCO</span></h6>
                 <hr>
                 <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Dominio y hosting por un año</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Diseño responsivo para moviles</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Capacitacion para actualizar contenido</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Correos corporativos</li>
+                  <li ><span class="fa-li"><i class="fas fa-check"></i></span>Banners y publicaiones para redes sociales</li>
+                  <li ><span class="fa-li"><i class="fas fa-check"></i></span>Galeria de fotos</li>
+                  <li ><span class="fa-li"><i class="fas fa-check"></i></span>plugins y plantilas</li>
+                  <li ><span class="fa-li"><i class="fas fa-check"></i></span>Entrega digital de medios</li>
                 </ul>
                 <a href="https://bit.ly/2Hggz8W" class="btn btn-block btn-primary text-uppercase"><span style="color: white; font-size: 1.5rem; margin-right: 30px"><i class="fab fa-whatsapp"></i></span>saber más</a>
               </div>
@@ -381,7 +383,7 @@
       </div>
     </section>
     <!--contacto-->
-    <section id="contacto">
+    <section data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="contacto">
       <div class="container">
         <div class="container">
           <div class="row">
@@ -431,9 +433,9 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase" style="color:black">Pagina web responsiva</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="item-intro text-muted">Diseño e implementación de pagina web adaptada para moviles.</p>
                   <img class="img-fluid d-block mx-auto" src="imagenes/proyectoWeb3.png" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p>Diseño de pagina web pensada para mejor optimizacion en dispositivos moviles.</p>
                   <ul class="list-inline">
                     <li>Cliente: Estudiantes Area Andina</li>
                     <li>Categoria: Diseño Web</li>
@@ -462,13 +464,13 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase" style="color:black">Pagina web responsiva</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="imagenes/proyectoWeb3.png" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase" style="color:black">logo digipixel</h2>
+                  <p class="item-intro text-muted">Diseño de logo para agencia.</p>
+                  <img class="img-fluid d-block mx-auto" src="imagenes/proyectoDiseño2.png" alt="">
+                  <p>Diseño fresco y a la moda, primando la paleta de colores, tenemos experiencia en diseños de logos para corporaciones y marcas.</p>
                   <ul class="list-inline">
-                    <li>Cliente: Estudiantes Area Andina</li>
-                    <li>Categoria: Diseño Web</li>
+                    <li>Cliente: digipixel agencia</li>
+                    <li>Categoria: Diseño Gráfico</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -494,13 +496,13 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase" style="color:black">Pagina web responsiva</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="imagenes/proyectoWeb3.png" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase" style="color:black">intro video 15'</h2>
+                  <p class="item-intro text-muted">Animacion de intro para video de 15 años.</p>
+                  <img class="img-fluid d-block mx-auto" src="imagenes/karen-intro.png" alt="">
+                  <p>Intro animado en After Effects, para cada animacion se ilustran y animan todas las diferentes partes de la intro.</p>
                   <ul class="list-inline">
-                    <li>Cliente: Estudiantes Area Andina</li>
-                    <li>Categoria: Diseño Web</li>
+                    <li>Cliente: Deysi alzate</li>
+                    <li>Categoria: Motion Graphics</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
