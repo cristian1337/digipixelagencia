@@ -17,7 +17,7 @@ $(document).ready(function(){
     .addTo(controller);
 
     var escena2 = new ScrollMagic.Scene({
-        triggerElement: '#trigger2',
+        triggerElement: '#trigger ul',
         triggerHook: 0,
         reverse: false
     })
@@ -30,7 +30,7 @@ $(document).ready(function(){
     .addTo(controller);
 
     var escena3 = new ScrollMagic.Scene({
-        triggerElement: '#trigger3',
+        triggerElement: '#trigger ul',
         triggerHook: 0,
         reverse: false
     })
