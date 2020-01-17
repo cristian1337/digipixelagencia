@@ -481,8 +481,8 @@ section.precios {
          url('../fuentes/vcr_osd_mono_1.001-webfont.ttf') format('truetype'),
          url('../fuentes/vcr_osd_mono_1.001-webfont.svg#vcr_osd_mono_1.001-webfont') format('svg');
 }
-div#somos-fade2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+#somos-fade2 {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-around !important;
 }
